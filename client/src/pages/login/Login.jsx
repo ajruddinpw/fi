@@ -10,8 +10,9 @@ const Login = () => {
     const navigate=useNavigate();
 
     const handleSubmit = async (e) => {
+        e.preventDefault();
         try {
-            e.preventDefault();
+            
             const res=await newRequest.post('https://fi-hwfz.vercel.app/auth/login',{username,password});
             localStorage.setItem("currentUser",JSON.stringify(res.data));
             navigate('/');
