@@ -24,7 +24,7 @@ const connect = async () => {
 };
 //middleware
 //frontend port number
-app.use(cors({origin:"http://localhost:3000",credentials:true}));
+app.use(cors({origin:"https://fi-one.vercel.app",credentials:true}));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.static('public'));
