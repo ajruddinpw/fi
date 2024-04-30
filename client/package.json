@@ -20,6 +20,13 @@
     "sass": "^1.63.6",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+    "infinite-react-carousel": {
+        "peerDependencies": {
+            "react": "^18.2.0"
+        }
+    }
+},
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
