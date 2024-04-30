@@ -17,7 +17,7 @@ const Login = () => {
             localStorage.setItem("currentUser",JSON.stringify(res.data));
             navigate('/');
         } catch (err) {
-            setError(err.response.data);
+            setError(err.response.data.error);
         }
 
     }
@@ -39,7 +39,7 @@ const Login = () => {
                     onChange={e => setPassword(e.target.value)}
                 />
                 <button type="submit">Login</button>
-                { error && error}
+                { error && <p className="error">{error}</p>}
             </form>
         </div>
     ]);
