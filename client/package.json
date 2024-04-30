@@ -23,7 +23,7 @@
   "overrides": {
     "infinite-react-carousel": {
         "peerDependencies": {
-            "react": "^18.2.0"
+            "react": "^16.0.0"
         }
     }
 },
