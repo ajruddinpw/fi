@@ -13,20 +13,13 @@
     "cors": "^2.8.5",
     "infinite-react-carousel": "^1.2.11",
     "moment": "^2.30.1",
-    "react": "^16.14.0",
+    "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
     "sass": "^1.63.6",
     "web-vitals": "^2.1.4"
   },
-  "overrides": {
-    "infinite-react-carousel": {
-        "peerDependencies": {
-            "react": "^16.0.0"
-        }
-    }
-},
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
